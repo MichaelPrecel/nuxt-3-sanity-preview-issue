@@ -1,0 +1,34 @@
+// .card {
+//   display: flex;
+//   flex-direction: column;
+
+//   a {
+//     // &:hover,
+//     // &:focus {
+//     //   color: var(--dark-green);
+//     // }
+
+//     &.ratio-box,
+//     &.images-box {
+//       &:hover,
+//       &:focus {
+//         + a {
+//           color: var(--dark-green);
+//         }
+//       }
+//     }
+//   }
+
+//   .ratio-box {
+//     margin-bottom: var(--xs);
+
+//     // @include media('<tablet') {
+//     //   margin-bottom: var(--s);
+//     // }
+//   }
+
+//   picture {
+//     border-radius: var(--radius);
+//     overflow: hidden;
+//   }
+// }

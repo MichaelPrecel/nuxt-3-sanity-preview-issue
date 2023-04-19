@@ -1,0 +1,128 @@
+// INCLUDE-MEDIA BREAKPOINTS
+$breakpoints: (
+  mobile: 550px,
+  tablet: 768px,
+  ltablet: 1024px,
+  desktop: 1440px,
+);
+// ---
+
+// Global
+// Setup root variables
+:root {
+  // Colours
+  --brown: #b4915e;
+  --black: #000;
+  --grey: #cbcbcb;
+  --dk-grey: #858585;
+  // --dk-grey: var(--brown);
+  --green: #a1e25f;
+  --lt-green: #cfee8e;
+  --dk-green: #567761;
+  --yellow: #d9e100;
+  --lt-yellow: #eff078;
+  --red: #9f2842;
+  --lt-red: #e9c4c6;
+  --dk-red: #430000;
+  --cream: #f7f7f1;
+  --cream: #f9f9f5;
+  // --lt-green: #6f826a;
+  // #6f826a
+
+  --highlight: var(--lt-yellow, white);
+
+  // Sizes
+  --xxxs: 0.25rem;
+  --xxs: 0.5rem;
+  --xs: 1rem;
+  --s: 2rem;
+  --m: 4rem;
+  --l: 6rem;
+  --xl: 10rem;
+  --xxl: 14rem;
+  --xxxl: 20rem;
+
+  @include media("<mobile") {
+    --s: 1.5rem;
+    --m: 3rem;
+    --l: 4.5rem;
+    --xl: 8rem;
+    --xxl: 12rem;
+    --xxxl: 16rem;
+  }
+
+  // Dimensions
+  --max-width: 1100px;
+  --max-width-sm: 600px;
+  --max-width-md: 800px;
+  --max-width-lg: 1100px;
+  --max-width-xl: 1300px;
+  --padding: var(--s);
+  --padding-hori: var(--m);
+  --gutter: var(--s);
+  --radius: 1rem;
+
+  @include media("<1200px") {
+    --padding-hori: var(--s);
+  }
+
+  @include media("<tablet") {
+    --padding-hori: var(--s);
+  }
+
+  // Transitions
+  --trans-default: 0.2s ease-out;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  list-style: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-overflow-scrolling: touch; /* momentum scrolling on mobiles */
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+::selection {
+  background: var(--black);
+  color: white;
+}
+
+:focus {
+  outline-color: var(--highlight);
+  outline: none;
+}
+
+html {
+  font-size: 10px;
+  font-family: var(--fonts);
+  overflow: auto;
+  position: relative;
+  min-height: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body,
+html {
+  background: var(--cream);
+}

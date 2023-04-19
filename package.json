@@ -1,0 +1,28 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxt/image-edge": "1.0.0-27968280.9739e4d",
+    "@vueuse/core": "^9.13.0",
+    "@vueuse/nuxt": "^9.13.0",
+    "consola": "^3.0.2",
+    "include-media": "^2.0.0",
+    "nuxt": "^3.4.1",
+    "sass": "^1.58.3"
+  },
+  "dependencies": {
+    "@nuxtjs/sanity": "^1.6.0",
+    "@pinia/nuxt": "^0.4.7",
+    "@sanity/image-url": "^1.0.2",
+    "@vueuse/motion": "2.0.0-beta.18",
+    "pinia": "^2.0.33",
+    "reset-css": "^5.0.1",
+    "vh-check": "^2.0.5"
+  }
+}
